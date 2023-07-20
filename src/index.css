@@ -4,4 +4,38 @@
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  padding: 1.25em 2.25em;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1 );
+}
+
+.nav-logo {
+  max-width: 100px;
+}
+
+section {
+  padding: 1.25em;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  max-width: 400px;
+  align-self: center;
+}
+
+.hero-title {
+  margin-top: 1em;
+}
+
+.hero-text {
+  margin-top: 0;
 }
