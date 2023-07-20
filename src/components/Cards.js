@@ -2,20 +2,20 @@ import React from 'react'
 import katie from '../images/katie.png'
 import star from '../images/star.png'
 
-const Cards = () => {
+const Cards = (props) => {
   return (
     <section>
         <div className='card'>
-        <img className='card-img' src={katie} alt="Katie Zaferes wearing a swim suit with a swim cap and goggles" />
+        <img className='card-img' src={props.img} alt="Katie Zaferes wearing a swim suit with a swim cap and goggles" />
         <div className='card-stats'>
             <img src={star} alt="a red star" className='card-star' />
-            <span>5.0</span>
-            <span className='gray-tint'>(6) • </span>
-            <span className='gray-tint'>USA</span> 
+            <span>props.rating</span>
+            <span className='gray-tint'>{props.review} • </span>
+            <span className='gray-tint'>{props.country}</span> 
             
         </div>
-        <p className='cardi-title'>Life lessons with Katie Zaferes</p>
-        <p><span className='card-price'>From $136</span> / person</p>
+        <p className='cardi-title'>{props.title}</p>
+        <p><span className='card-price'>From props.price</span> / person</p>
         </div>
     </section>
   )
