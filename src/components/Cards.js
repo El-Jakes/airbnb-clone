@@ -6,7 +6,7 @@ const Cards = (props) => {
   return (
     <section>
         <div className='card'>
-        <img className='card-img' src={props.img} alt="Katie Zaferes wearing a swim suit with a swim cap and goggles" />
+        <img className='card-img' src={katie} alt="Katie Zaferes wearing a swim suit with a swim cap and goggles" />
         <div className='card-stats'>
             <img src={star} alt="a red star" className='card-star' />
             <span>props.rating</span>
@@ -15,7 +15,7 @@ const Cards = (props) => {
             
         </div>
         <p className='cardi-title'>{props.title}</p>
-        <p><span className='card-price'>From props.price</span> / person</p>
+        <p><span className='card-price'>From {props.price}</span> / person</p>
         </div>
     </section>
   )
