@@ -1,21 +1,29 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Cards from './components/Cards';
-import image from './components/images/katie.png'
+import data from './data'
 
 function App() {
+  const cards = data.map( datum => {
+    return (
+      <Cards 
+        coverImg={datum.coverImg}
+        rating={datum.stats.rating}
+        reviewCount={datum.stats.reviewCount}
+        location={datum.location}
+        title={datum.title}
+        price={datum.price}
+      />
+    )
+  })
+
   return (
     <div className="app">
       <Nav />
       <Hero />
-      <Cards 
-        img={image}
-        rating="5.0"
-        review={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      <section className='cards-container'>
+        {cards}
+      </section>
     </div>
   );
 }

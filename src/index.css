@@ -45,6 +45,11 @@ section {
   font-size: 0.75rem;
 }
 
+.cards-container {
+  display: flex;
+  overflow: scroll;
+}
+
 .card-img {
   border-radius: 10px;
   width: 100%;
