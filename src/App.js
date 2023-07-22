@@ -1,7 +1,7 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Cards from './components/Cards';
-import image from './images/katie.png'
+import image from './components/images/katie.png'
 
 function App() {
   return (
