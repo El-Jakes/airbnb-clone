@@ -14,7 +14,6 @@ const Cards = (props) => {
             
         </div>
         <p className='cardi-title'>{props.title}</p>
-        <p><span className='card-price'>From {props.price}</span> / person</p>
         <p><span className='card-price'>From ${props.price}</span> / person</p>
         </div>
     </section>
