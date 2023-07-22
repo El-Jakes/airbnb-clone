@@ -8,13 +8,10 @@ function App() {
     return (
       <Cards
         key={datum.id}
-        coverImg={datum.coverImg}
-        rating={datum.stats.rating}
-        reviewCount={datum.stats.reviewCount}
-        location={datum.location}
-        title={datum.title}
-        price={datum.price}
-        openSpots={datum.openSpots}
+        /*  Passing objects as props: this is to ensure our code is dry. 
+            The datum object should also be passed in the Card.js component in order for this to work.
+        */ 
+        datum={datum}
       />
     )
   })
