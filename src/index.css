@@ -41,24 +41,35 @@ section {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
   width: 175px;
   font-size: 0.75rem;
 }
 
 .cards-container {
   display: flex;
-  overflow: scroll;
+  flex-wrap: nowrap;
+  gap: 1.25em;
+  overflow-x: auto;
 }
 
 .card-img {
   border-radius: 10px;
   width: 100%;
+  margin-bottom: .563em;
 }
 
 .card-stats {
   display: flex;
   align-items: center;
   gap: .5em;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-star {
@@ -71,4 +82,5 @@ section {
 
 .card-price {
   font-weight: bold;
+  margin-top: auto;
 }

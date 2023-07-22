@@ -3,7 +3,6 @@ import star from './images/star.png'
 
 const Cards = (props) => {
   return (
-    <section>
         <div className='card'>
         <img className='card-img' src={props.coverImg} alt="Katie Zaferes wearing a swim suit with a swim cap and goggles" />
         <div className='card-stats'>
@@ -13,10 +12,9 @@ const Cards = (props) => {
             <span className='gray-tint'>{props.location}</span> 
             
         </div>
-        <p className='cardi-title'>{props.title}</p>
+        <p className='cards-title'>{props.title}</p>
         <p><span className='card-price'>From ${props.price}</span> / person</p>
         </div>
-    </section>
   )
 }
 

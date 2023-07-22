@@ -6,7 +6,8 @@ import data from './data'
 function App() {
   const cards = data.map( datum => {
     return (
-      <Cards 
+      <Cards
+        key={datum.id}
         coverImg={datum.coverImg}
         rating={datum.stats.rating}
         reviewCount={datum.stats.reviewCount}
